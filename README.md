@@ -3,8 +3,7 @@
 
 ## UML Diagram
 
-![UML Diagram](UML_IMAGE_URL_HERE)
-
+![UML Diagram](Lab7.drawio.png)
 
 ---
 
