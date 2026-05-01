@@ -10,7 +10,7 @@
 ## Data Models & Validations
 
 ### 1. Course Model
-- **ID:** Cannot be null, size > 2.
+- **ID:** Cannot be null, Size must be more than 2.
 - **Name:** Cannot be empty.
 - **Level:** Must be a positive number (1 to 8).
 - **Language:** Cannot be empty.
@@ -44,26 +44,26 @@
 ## LMS Controller Endpoints
 
 ### TeacherController
-- **CRUD Operations:** Full management of courses.
+- **CRUD Operations:** Create, Read, Update, and Delete teacher.
 
 ### StudentController
-- **CRUD Operations:** Full management of student records.
-- **Check Graduation:** Takes `student_id` and returns "Expected to Graduate" or "Regular Student".
+- **CRUD Operations:** Create, Read, Update, and Delete student.
+- **Check Graduation:** Takes student id and returns "Expected to Graduate" or "Regular Student".
 
 ### CourseController
-- **CRUD Operations:** Full management of courses.
+- **CRUD Operations:** Create, Read, Update, and Delete courses.
 - **Enroll Student:** Checks if student level and course level match.
 - **Get Courses by Level Range:** Filter courses between `min` and `max` levels.
 - **Get Available Courses:** Returns only courses where `isAvailable` is true.
 
 ### ProjectController
-- **CRUD Operations:** Full management of projects.
+- **CRUD Operations:** Create, Read, Update, and Delete projects.
 - **Update Project Status:** Updates state (e.g., to "Done").
-- **Search Projects by Title:** Search by keyword.
-- **Get Projects by Status:** Filter projects based on status.
+- **Search Projects by Title:** Get Projects by Title.
+- **Get Projects by Status:** Get projects based on status.
 
 ### AssignmentController
-- **CRUD Operations:** Full management of assignments.
-- **Check Student Grade:** Verifies if score is $\le$ total marks.
+- **CRUD Operations:** Create, Read, Update, and Delete assignments.
+- **Check Student Grade:** Checks if the student's score is less than or equal to the total marks.
 - **Extend Deadline:** Adds extra days to the finish date.
-- **Get Hard Assignments:** List assignments with > 50 marks.
+- **Get Hard Assignments:** Get a list of all assignments that have more than 50 marks.
