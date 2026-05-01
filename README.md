@@ -38,6 +38,7 @@
 - **ID:** Cannot be null.
 - **Title:** Cannot be empty.
 - **Total Marks:** Must be a positive number (up to 100).
+- **deadlineInDays:** Must be positive number.
 
 ---
 
